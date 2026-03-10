@@ -221,15 +221,6 @@ Visual Feedback (Safe / Warning / Danger)
 Optional Community Report
 ```
 
----
-
-## 🚀 Live Demo
-
-🌐 https://sonukumawat-sde.github.io/ScholarShield-CyberSecurity/
-
-Runs directly in browser. No installation required.
-
----
 
 ## ⚙️ Local Setup
 
