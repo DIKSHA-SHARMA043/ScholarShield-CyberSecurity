@@ -1,0 +1,448 @@
+/* ============================================
+   ScholarShield - Responsive Stylesheet
+   Mobile-First Responsive Design
+   ============================================ */
+
+/* ========== TABLET (max-width: 1024px) ========== */
+@media screen and (max-width: 1024px) {
+    .hero-title {
+        font-size: 2.75rem;
+    }
+    
+    .hero-stats {
+        gap: var(--spacing-lg);
+    }
+    
+    .stat-card {
+        min-width: 180px;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .report-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .workflow-diagram {
+        gap: var(--spacing-sm);
+    }
+    
+    .workflow-arrow {
+        font-size: 1.5rem;
+    }
+}
+
+/* ========== MOBILE LANDSCAPE (max-width: 768px) ========== */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: var(--spacing-lg);
+        gap: var(--spacing-md);
+        box-shadow: var(--shadow-xl);
+        transform: translateY(-150%);
+        transition: var(--transition-normal);
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+    }
+    
+    .nav-link {
+        font-size: 1.125rem;
+        padding: var(--spacing-sm);
+        display: block;
+        text-align: center;
+        background: var(--gray-50);
+        border-radius: var(--radius-md);
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    
+    .cta-button {
+        display: none;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 120px 0 60px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat-card {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+    }
+    
+    .btn-large {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .trust-indicators {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    /* Section Headers */
+    .section-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
+    }
+    
+    /* Scanner */
+    .scanner-input-group {
+        flex-direction: column;
+    }
+    
+    .scanner-input {
+        width: 100%;
+    }
+    
+    .scanner-card {
+        padding: var(--spacing-md);
+    }
+    
+    .scanner-tabs {
+        flex-direction: column;
+    }
+    
+    .tab-button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .example-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    /* Portals */
+    .portal-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .filter-btn {
+        justify-content: center;
+    }
+    
+    .portals-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Workflow */
+    .workflow-diagram {
+        flex-direction: column;
+    }
+    
+    .workflow-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .tech-features {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Team */
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+    }
+    
+    /* Toast */
+    .toast-container {
+        left: 20px;
+        right: 20px;
+    }
+    
+    .toast {
+        min-width: auto;
+        width: 100%;
+    }
+}
+
+/* ========== MOBILE PORTRAIT (max-width: 480px) ========== */
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    /* Header */
+    .logo {
+        font-size: 1.25rem;
+    }
+    
+    .logo i {
+        font-size: 1.5rem;
+    }
+    
+    .badge {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.4rem;
+    }
+    
+    /* Hero */
+    .hero {
+        padding: 100px 0 50px;
+    }
+    
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    /* Problem Cards */
+    .problem-card {
+        padding: var(--spacing-md);
+    }
+    
+    .problem-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+    
+    /* Scanner */
+    .scanner-header i {
+        font-size: 2rem;
+    }
+    
+    .scanner-header h3 {
+        font-size: 1.25rem;
+    }
+    
+    .qr-upload-area {
+        padding: var(--spacing-md);
+    }
+    
+    .upload-placeholder i {
+        font-size: 2rem;
+    }
+    
+    /* Results */
+    .results-container {
+        padding: var(--spacing-md);
+    }
+    
+    .threat-level {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+    
+    .result-title {
+        font-size: 1.125rem;
+    }
+    
+    /* Report */
+    .report-form-card,
+    .recent-reports-card {
+        padding: var(--spacing-md);
+    }
+    
+    .report-form-card h3,
+    .recent-reports-card h3 {
+        font-size: 1.25rem;
+    }
+    
+    /* Workflow */
+    .step-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .step-number {
+        width: 32px;
+        height: 32px;
+        font-size: 0.875rem;
+    }
+    
+    /* Team */
+    .team-card {
+        padding: var(--spacing-md);
+    }
+    
+    .team-avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+}
+
+/* ========== HOVER STATES FOR TOUCH DEVICES ========== */
+@media (hover: none) {
+    .btn:hover,
+    .cta-button:hover,
+    .nav-link:hover,
+    .portal-card:hover,
+    .problem-card:hover,
+    .team-card:hover {
+        transform: none;
+    }
+}
+
+/* ========== REDUCED MOTION ========== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ========== DARK MODE SUPPORT (Future) ========== */
+@media (prefers-color-scheme: dark) {
+    /* Dark mode styles can be added here in future */
+}
+
+/* ========== PRINT STYLES ========== */
+@media print {
+    .header,
+    .hero-background,
+    .cta-button,
+    .btn,
+    .scanner-section,
+    .report-section,
+    .footer {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .hero {
+        padding: 20px 0;
+    }
+    
+    .section-header h2 {
+        color: black;
+    }
+}
+
+/* ========== LANDSCAPE ORIENTATION ========== */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: 100px 0 40px;
+    }
+    
+    .hero-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .stat-card {
+        min-width: 150px;
+    }
+}
+
+/* ========== HIGH DPI DISPLAYS ========== */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo i,
+    .scanner-header i {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* ========== EXTRA LARGE SCREENS (min-width: 1440px) ========== */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .hero-description {
+        font-size: 1.375rem;
+    }
+    
+    .section-header h2 {
+        font-size: 3rem;
+    }
+}
+
+/* ========== ULTRA WIDE SCREENS (min-width: 1920px) ========== */
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 18px;
+    }
+    
+    .container {
+        max-width: 1600px;
+    }
+}

@@ -1,0 +1,102 @@
+{
+  "lastUpdated": "2026-03-09",
+  "version": "2.0.0",
+  "confirmedScams": [
+    {
+      "domain": "layerline.in",
+      "type": "fake-scholarship",
+      "description": "Fake scholarship portal collecting personal data",
+      "reportedBy": 47,
+      "confirmedScam": true,
+      "firstReported": "2026-01-15",
+      "threatLevel": "high"
+    },
+    {
+      "domain": "scholarship-india.tk",
+      "type": "phishing",
+      "description": "Phishing clone of NSP portal",
+      "reportedBy": 89,
+      "confirmedScam": true,
+      "firstReported": "2026-02-10",
+      "threatLevel": "critical"
+    },
+    {
+      "domain": "nsp-verify.ml",
+      "type": "credential-theft",
+      "description": "Fake verification portal stealing login credentials",
+      "reportedBy": 156,
+      "confirmedScam": true,
+      "firstReported": "2026-02-20",
+      "threatLevel": "critical"
+    },
+    {
+      "domain": "scholarshipapply.online",
+      "type": "payment-fraud",
+      "description": "Collecting fake processing fees",
+      "reportedBy": 34,
+      "confirmedScam": true,
+      "firstReported": "2026-03-01",
+      "threatLevel": "high"
+    },
+    {
+      "domain": "gov-scholarship.xyz",
+      "type": "phishing",
+      "description": "Impersonating government portal",
+      "reportedBy": 62,
+      "confirmedScam": true,
+      "firstReported": "2026-02-25",
+      "threatLevel": "critical"
+    },
+    {
+      "domain": "instant-scholarship.com",
+      "type": "data-theft",
+      "description": "Collecting Aadhaar and bank details",
+      "reportedBy": 28,
+      "confirmedScam": true,
+      "firstReported": "2026-03-05",
+      "threatLevel": "high"
+    }
+  ],
+  "suspiciousPatterns": {
+    "domains": [
+      ".tk", ".ml", ".ga", ".cf", ".gq",
+      ".xyz", ".top", ".site", ".online", ".club",
+      ".buzz", ".work", ".space", ".website"
+    ],
+    "keywords": [
+      "verify-now", "claim-now", "urgent", "limited-time",
+      "act-fast", "confirm-eligibility", "instant-approval",
+      "guaranteed", "winner", "congratulations", "selected",
+      "free-money", "cash-prize", "claim-reward",
+      "verify-account", "update-details", "confirm-identity",
+      "scholarship-approved", "payment-pending"
+    ],
+    "suspiciousSubstrings": [
+      "scholarship-apply", "nsp-portal", "gov-scholarship",
+      "official-scholarship", "india-scholarship", "scholarship-verify",
+      "nsp-verify", "scholarship-login", "gov-portal"
+    ],
+    "highRiskIndicators": [
+      "layerline", "scholarline", "eduline", "studyline",
+      "scholarship-now", "apply-scholarship", "get-scholarship"
+    ]
+  },
+  "trustedIndicators": {
+    "mustHaveTLD": [".gov.in", ".ac.in", ".edu.in", ".nic.in"],
+    "trustedKeywords": ["scholarships.gov.in", "nsportal", "mahadbt"]
+  },
+  "communityReports": {
+    "recentScams": [
+      {
+        "url": "http://scholarship-winner.tk/claim",
+        "reports": 23,
+        "category": "fake-winner-scam"
+      },
+      {
+        "url": "https://nsp-urgent.online/verify",
+        "reports": 45,
+        "category": "urgency-scam"
+      }
+    ]
+  }
+}

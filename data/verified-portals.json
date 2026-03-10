@@ -1,0 +1,58 @@
+{
+  "lastUpdated": "2026-03-09",
+  "version": "1.0.0",
+  "totalPortals": 24,
+  "portals": [
+    {
+      "id": "nsp-001",
+      "name": "National Scholarship Portal",
+      "domain": "scholarships.gov.in",
+      "category": "central",
+      "verified": true,
+      "ssl": true,
+      "lastVerified": "2026-03-09"
+    },
+    {
+      "id": "ugc-001",
+      "name": "UGC Scholarships",
+      "domain": "ugc.ac.in",
+      "category": "central",
+      "verified": true,
+      "ssl": true,
+      "lastVerified": "2026-03-09"
+    },
+    {
+      "id": "aicte-001",
+      "name": "AICTE Scholarships",
+      "domain": "aicte-india.org",
+      "category": "central",
+      "verified": true,
+      "ssl": true,
+      "lastVerified": "2026-03-09"
+    }
+  ],
+  "trustedDomains": [
+    "scholarships.gov.in",
+    "ugc.ac.in",
+    "aicte-india.org",
+    "minorityaffairs.gov.in",
+    "socialjustice.nic.in",
+    "tribal.nic.in",
+    "wcd.nic.in",
+    "sje.rajasthan.gov.in",
+    "mahadbt.maharashtra.gov.in",
+    "scholarship.up.gov.in",
+    "telanganaepass.cgg.gov.in"
+  ],
+  "blacklistedPatterns": [
+    ".tk",
+    ".ml",
+    ".ga",
+    ".cf",
+    ".gq",
+    "scholarship-apply",
+    "nsp-portal",
+    "verify-scholarship",
+    "instant-scholarship"
+  ]
+}
